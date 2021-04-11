@@ -1,0 +1,39 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-chatapp-dev-194532-authRole",
+            "UnauthRoleArn": "arn:aws:iam::124883821192:role/amplify-chatapp-dev-194532-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::124883821192:role/amplify-chatapp-dev-194532-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-chatapp-dev-194532-deployment",
+            "UnauthRoleName": "amplify-chatapp-dev-194532-unauthRole",
+            "StackName": "amplify-chatapp-dev-194532",
+            "StackId": "arn:aws:cloudformation:us-east-1:124883821192:stack/amplify-chatapp-dev-194532/c8da8740-e86f-11ea-ad4f-0a818cac4dad",
+            "AmplifyAppId": "d1hdq3oqp6hii3"
+        }
+    },
+    "api": {
+        "ChatAPI": {
+            "service": "AppSync",
+            "output": {
+                "authConfig": {
+                    "defaultAuthentication": {
+                        "authenticationType": "AMAZON_COGNITO_USER_POOLS"
+                    },
+                    "additionalAuthenticationProviders": null,
+                    "userPoolConfig": {
+                        "userPoolId": "us-east-1_Bg77k7B2m",
+                        "awsRegion": "us-east-1",
+                        "defaultAction": "ALLOW",
+                        "appIdClientRegex": null
+                    }
+                },
+                "GraphQLAPIIdOutput": "737evs3ivncv7o5zwucqcymwvm",
+                "GraphQLAPIEndpointOutput": "https://sslnnyfdbjcrdobauruc32a2ia.appsync-api.us-east-1.amazonaws.com/graphql",
+                "name": "ChatAPI",
+                "region": "us-east-1"
+            },
+            "lastPushTimeStamp": "2020-10-23T14:07:33.099Z"
+        }
+    }
+}

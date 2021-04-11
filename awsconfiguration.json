@@ -1,0 +1,51 @@
+{
+    "UserAgent": "aws-amplify-cli/0.1.0",
+    "Version": "1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://sslnnyfdbjcrdobauruc32a2ia.appsync-api.us-east-1.amazonaws.com/graphql",
+            "Region": "us-east-1",
+            "AuthMode" : "AMAZON_COGNITO_USER_POOLS",
+            "authorizationType": "AMAZON_COGNITO_USER_POOLS",
+            "ClientDatabasePrefix": "ChatAPI_AMAZON_COGNITO_USER_POOLS"
+        }
+    },
+    "CredentialsProvider": {
+    "CognitoIdentity": {
+        "Default": {
+            "PoolId": "us-east-1:626b8507-495f-4fac-bce6-0c41d4f4301c",
+            "Region": "us-east-1"
+        }
+    }
+},
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_Bg77k7B2m",
+            "AppClientId": "28ioal72kq7ccs3mrd29n2c032",
+            "AppClientSecret": "14i2npttgsvrq6c0cg2mm0h5o527gbem04o7d3msbbfonju41lr",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "AppClientId": "28ioal72kq7ccs3mrd29n2c032",
+                "AppClientSecret": "14i2npttgsvrq6c0cg2mm0h5o527gbem04o7d3msbbfonju41lr",
+                "WebDomain": "unisystechhub.auth.us-east-1.amazoncognito.com",
+                "SignInRedirectURI": "ioschatapp://callback/",
+                "SignOutRedirectURI": "ioschatapp://signout/",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH"
+        }
+    }
+}
